@@ -5,4 +5,8 @@
 
 doas loadkeys ~/.config/loadkeys/loadkeysrc
 
+export BROWSER="firefox"
+export TERMINAL="st"
+export TERM="st"
+
 [ "$(tty)" = "/dev/tty1" ] && startx
