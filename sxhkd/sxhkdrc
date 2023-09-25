@@ -1,0 +1,20 @@
+super + Return
+        $TERMINAL
+
+super + w
+        $BROWSER
+
+super + s
+        $HOME/bin/toggle_scratchpad.sh
+
+super + {equal, minus, BackSpace}
+        $HOME/bin/volume.sh {up, down, toggle}
+
+super + m
+        $HOME/bin/mount.sh
+
+super + p
+        $HOME/bin/passmenu.sh
+
+super + x
+        $HOME/bin/x.sh
