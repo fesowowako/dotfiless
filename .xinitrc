@@ -7,4 +7,5 @@ fi
 
 xrdb .Xresources
 setxkbmap -layout us,ara -variant ,digits -option grp:sclk_toggle caps:escape
+sxhkd &
 exec dwm
