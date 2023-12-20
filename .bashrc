@@ -1,19 +1,25 @@
-# .bashrc
+#
+# ~/.bashrc
+#
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
+alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
+export PATH=$PATH:~/.local/bin
+
 ## general
-alias vi='vim'
+alias vi='nvim'
+alias vim='nvim'
 alias ll='ls -l'
 
-## xbps
-alias i='doas xbps-install -S'
-alias u='i; doas xbps-install -u xbps; doas xbps-install -u'
-alias q='xbps-query -Rs'
-alias r='doas xbps-remove -R'
+## pacman
+alias i='doas pacman -S'
+alias u='doas pacman -Syu'
+alias q='pacman -Ss'
+alias r='doas pacman -Rncs'
 
 set -o vi
